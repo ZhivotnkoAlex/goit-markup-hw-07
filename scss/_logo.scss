@@ -1,0 +1,13 @@
+.logo {
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    /* line-height: 1.9; */
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    &__header {
+        margin-right: 85px;
+    }
+}
