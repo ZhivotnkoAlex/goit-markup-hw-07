@@ -1,5 +1,10 @@
+@mixin logo($color) {
+    color: $color;
+}
+
+
 .logo {
-    color: #000000;
+    @include logo($main-color);
     @extend .logo__font;
     text-decoration: none;
     padding-top: 24px;
@@ -8,7 +13,6 @@
         font-family: Raleway;
         font-weight: 700;
         font-size: 26px;
-        /* line-height: 1.9; */
     }
     
 &__header {
@@ -22,13 +26,13 @@
     }
     
 &--blue {
+        @include logo($accent-primary-color);
         @extend .logo__font;
-        color: $accent-primary-color;
     }
     
 &--invert {
         @extend .logo__font;
-        color: #ffffff;
+        @include logo($main-color-invert);
         text-decoration: none;
     }
     
