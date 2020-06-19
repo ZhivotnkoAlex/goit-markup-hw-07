@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <title>BEM-Portfolio</title>
@@ -14,17 +14,18 @@
     <header class="header">
         <div class="container header__wrap">
             <div class="header__wrap">
-                <a href="./index.html" class="logo header__logo"> <span class="logo--blue">Web</span> Studio</a>
+                <a href="./index.html" class="logo logo__header"> <span class="logo--blue">Web</span> Studio</a>
                 <nav>
                     <ul class="site-nav header_site-nav">
                         <li class="site-nav__item">
-                            <a class="site-nav__link " href=./index.html>Студия</a>
+                            <a class="site-nav__link site-nav__link--current" href=./index.html>Студия</a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
+                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="">Контакты</a>
+
                         </li>
                     </ul>
                 </nav>
@@ -195,7 +196,6 @@
                                         <use href="./images/symbol-defs.svg#icon-instagram"  ></use>
                                     </svg>
                             </a>
-
                         </li>
                         <li>
                             <a href="https://twitter.com/ " class="social-network__link social-network__link--dark" aria-label="Твитер ">
@@ -221,22 +221,22 @@
                     </ul>
                 </div>
                 <!-- подписка -->
-                <div class="submit">
-                    <b class="submit__title "> подписаться на рассылку</b>
-                    <ul class="submit__list">
-                        <li class="submit__item"><input type="email" placeholder="E-mail" class="submit__mail" name="submit">
-                        </li>
-                        <li><button class="button submit__button ">
+                <div>
+                    <b class="submit"> подписаться на рассылку</b>
+                    <form action="" autocomplete="off">
+                        <ul class="submit__list">
+                            <li class="submit__item"><input type="email" placeholder="E-mail" class="submit__mail" name="user-email">
+                            </li>
+                            <li><button type="submit" class="button submit__button ">
                             Подписаться<svg class="submit__icon" width=24 height=24>
                                 <use href="./images/symbol-defs.svg#icon-plane"></use>
                             </svg>
                         </button></li>
-                    </ul>
+                        </ul>
+                    </form>
                 </div>
             </div>
-            <p class="copyright ">2020 | Developed by GoIT Students</p>
         </div>
-
     </footer>
 </body>
 

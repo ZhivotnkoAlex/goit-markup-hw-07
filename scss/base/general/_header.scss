@@ -11,7 +11,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    
+
 }
+
 
 
 /* Site nav */
@@ -26,14 +29,19 @@
         color: $main-color;
         padding-top: 32px;
         padding-bottom: 32px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color $transition;
         &:hover,
         &:focus {
             color: $accent-primary-color;
             cursor: pointer;
         }
+        
+
     }
+    
+
 }
+
 
 .site-nav__link--current {
     color: $accent-primary-color;
@@ -47,11 +55,15 @@
         background-color: #2196f3;
         border-radius: 2px;
     }
+    
+
 }
+
 
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
+
 
 
 /* Contacts */
@@ -62,25 +74,31 @@
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $transition;
     &__wraper {
         display: flex;
     }
-    &:hover,
+    
+&:hover,
     &:focus {
         color: $accent-primary-color;
         cursor: pointer;
     }
-    &:first-child {
+    
+&:first-child {
         margin-right: 50px;
     }
+    
+
 }
+
 
 .icon-envelope {
     margin-right: 10px;
     align-self: center;
     fill: currentColor;
 }
+
 
 .icon-phone {
     width: 10px;

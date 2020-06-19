@@ -26,6 +26,7 @@
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="">Контакты</a>
+
                         </li>
                     </ul>
                 </nav>
@@ -56,7 +57,7 @@
         <!--Форма заказа-->
         <div class="backdrop backdrop__hidden" data-backdrop>
 
-            <form class="form__js-speaker" action="" autocomplete="off">
+            <form class="form" action="" autocomplete="off">
                 <button type="button" class="form__close" data-close-modal>
                     <svg class="form__cross" width=18 height=18>
                             <use href="./images/symbol-defs.svg#icon-form-close" ></use>
@@ -111,45 +112,45 @@
 
 
         <!-- Описание ценностей -->
-        <section class="values-section">
+        <section class="values">
             <div class="container">
                 <h2 class="visually-hidden">Наши ценности</h2>
-                <ul class="values-section__list">
-                    <li class="values-section__item">
+                <ul class="values__list">
+                    <li class="values__item">
                         <div class="values__background">
                             <svg width=65 height=70>
                             <use  href="./images/symbol-defs.svg#icon-antenna" ></use> 
                         </svg>
                         </div>
-                        <h3 class="values-section__title ">Внимание к деталям</h3>
-                        <p class="values-section__descr">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <h3 class="values__title ">Внимание к деталям</h3>
+                        <p class="values__descr">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="values-section__item">
+                    <li class="values__item">
                         <div class="values__background">
                             <svg width=67 height=70>
                             <use  href="./images/symbol-defs.svg#icon-clock" ></use> 
                         </svg>
                         </div>
-                        <h3 class="values-section__title">Пунктуальность</h3>
-                        <p class="values-section__descr">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <h3 class="values__title">Пунктуальность</h3>
+                        <p class="values__descr">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="values-section__item">
+                    <li class="values__item">
                         <div class="values__background">
                             <svg width=70 height=70>
                             <use  href="./images/symbol-defs.svg#icon-diagram" ></use> 
                         </svg>
                         </div>
-                        <h3 class="values-section__title">Планирование</h3>
-                        <p class="values-section__descr">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <h3 class="values__title">Планирование</h3>
+                        <p class="values__descr">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="values-section__item">
+                    <li class="values__item">
                         <div class="values__background">
                             <svg width=70 height=70>
                             <use  href="./images/symbol-defs.svg#icon-astronaut" ></use> 
                             </svg>
                         </div>
-                        <h3 class="values-section__title">Современные технологии</h3>
-                        <p class="values-section__descr">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <h3 class="values__title">Современные технологии</h3>
+                        <p class="values__descr">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
@@ -422,8 +423,8 @@
                     </ul>
                 </div>
                 <!-- подписка -->
-                <div class="submit">
-                    <b class="submit__title "> подписаться на рассылку</b>
+                <div>
+                    <b class="submit"> подписаться на рассылку</b>
                     <form action="" autocomplete="off">
                         <ul class="submit__list">
                             <li class="submit__item"><input type="email" placeholder="E-mail" class="submit__mail" name="user-email">
@@ -437,7 +438,6 @@
                     </form>
                 </div>
             </div>
-            <p class="copyright ">2020 | Developed by GoIT Students</p>
         </div>
     </footer>
 
@@ -447,7 +447,7 @@
     <script>
         (() => {
             document
-                .querySelector('.form__js-speaker')
+                .querySelector('.form')
                 .addEventListener('submit', e => {
                     e.preventDefault();
 
